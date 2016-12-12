@@ -341,7 +341,7 @@ CMDResume.initVariables = function(){
     // Skills
     this.initSkills();
 
-    this.setArrayCommand("projects", "some projects I've worked on", projects);
+    // this.setArrayCommand("projects", "some projects I've worked on", projects);
 
     
     // Social Media

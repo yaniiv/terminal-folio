@@ -69,16 +69,9 @@ var employment = [
 	["Clicktime", "QA Engineering Intern", "June 2012 - September 2012"]
 ];
 // Volunteering list
-var projects = [
-	["Volunteer", "Voluntation", "November 2013 - Present"]
-
-];	
-
-// // Awards list
-// var awards = [["Mad Coder", "Programmer Institute", "December 2013"]];
-
-// // Membership list
-// var membership = [["Some Society", "Pizza Box Opener"]];
+// var projects = [
+// 	["Volunteer", "Voluntation", "November 2013 - Present"]
+// ];	
 
 // // Skills list
 var skillsLanguages = [["Strong", "Javascript"],
