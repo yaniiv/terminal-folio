@@ -89,6 +89,3 @@ var skillsTools = [["Strong", "React Node Express jQuery Bootstrap"],
 var skillsConcepts = [["Proficient", "Agile REST"],
 	["Experienced", "Functional Testing"]
 ];
-
-// var publicPGPkey = "\n"
-//   + "YOUR PGP KEY HERE";
