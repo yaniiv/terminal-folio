@@ -95,10 +95,6 @@ function setName(string){
     return setFormat(string, "green", true);
 }
 
-// function setPGP(string){
-//     return setFormat(string, "white", false, true);
-// }
-
 // Map skills
 function getSkills(skillList){
     var result = [];
@@ -267,11 +263,6 @@ CMDResume.init = function(tag){
 
     };
 
-    // Pre-call Github
-    // if (isNotEmpty(githubUsername)){
-    //     this.getGithub();
-    // }
-
     // Setup Terminal
     $(tag).terminal(function(command, term) {
         term.echo(CMDResume.commandLineParse(command) + "\n");
@@ -355,9 +346,6 @@ CMDResume.initVariables = function(){
         this.commandMap.socialmedia = "Social Media profiles";
         this.commandFunctionMap.socialmedia = this.getSocialMedia();
     }
-
-    // // PGP Key
-    // this.setCommand("pgpkey", "public PGP key", setPGP(publicPGPkey), publicPGPkey);
 
 };
 
