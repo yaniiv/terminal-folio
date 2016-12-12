@@ -160,10 +160,19 @@ CMDResume.hasSocialMedia = function(){
 // Return a list of skills in a table
 CMDResume.getSkillTable = function(){
     var result = setTitle("Skills:\n");
-    result += "           |\tStrong\t|\tExperienced\n";
-    result += getSkills(skillsLanguages).join("\t|\t") + "\n";
-    result += getSkills(skillsTools).join("\t|\t") + "\n";
-    result += "Concepts   |\t" + getSkills(skillsConcepts).join("\t|\t");
+    result += "|\tStrong\t|\tExperienced\t|\n";
+    result += `|\t${skillsStrong[0]}\t|\t${skillsExperienced[0]}\t|\n`;
+    result += `|\t${skillsStrong[1]}\t|\t${skillsExperienced[1]}\t|\n`;
+    result += `|\t${skillsStrong[2]}\t|\t${skillsExperienced[2]}\t|\n`;
+    result += `|\t${skillsStrong[3]}\t|\t${skillsExperienced[3]}\t|\n`;
+    result += `|\t${skillsStrong[4]}\t|\t${skillsExperienced[4]}\t|\n`;
+    result += `|\t${skillsStrong[5]}\t|\t${skillsExperienced[5]}\t|\n`;
+    result += `|\t${skillsStrong[6]}\t|\t${skillsExperienced[6]}\t|\n`;
+    result += `|\t${skillsStrong[7]}\t|\t${skillsExperienced[7]}\t|\n`;
+    result += `|\t${skillsStrong[8]}\t|\t${skillsExperienced[8]}\t|\n`;
+    result += `|\t${skillsStrong[9]}\t|\t${skillsExperienced[9]}\t|\n`;
+
+    // result += "Concepts   |\t" + getSkills(skillsConcepts).join("\t|\t");
 
     return result;
 };
@@ -271,9 +280,9 @@ CMDResume.init = function(tag){
 };
 
 CMDResume.getSplash = function(){
-    var welcome = ` ${splash} 
-     My Name is ${setName(name)} welcome to my portfolio.\n
-     Type ${setCommand("help")} for commands`;
+    var welcome = ` ${splash}
+My Name is ${setName(name)} welcome to my portfolio.\n
+Type ${setCommand("help")} for commands`;
     return welcome;
 };
 

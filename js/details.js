@@ -80,11 +80,14 @@ var projects = [
 // // Membership list
 // var membership = [["Some Society", "Pizza Box Opener"]];
 
-// Skills list
+// // Skills list
 var skillsLanguages = [["Strong", "Javascript"],
 ["Experienced", "HTML5 CSS3"]
 ];
 
+var skillsStrong = ["Javascript", "HTML5", "CSS3", "React", "Node", "Express", "Git", "jQuery", "ES6", "Bootstrap"]
+var skillsExperienced = ["Angular", "Redux", "Electron", "Webpack", "Mongo", "PostgreSQL", "Mongo", "Websockets", "SASS", "Mocha"]
+//  Angular, Redux, Electron, Webpack, Mongo, PostgreSQL, Websockets, SASS, Mocha
 var skillsTools = [["Strong", "React Node Express jQuery Bootstrap"],
 ["Experienced", "Git Anglar Redux Electron Webpack Mongo PosgreSQL Websockets Mocha SASS"]
 ];
