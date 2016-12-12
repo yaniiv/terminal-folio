@@ -272,15 +272,9 @@ CMDResume.init = function(tag){
 
 CMDResume.getSplash = function(){
     var welcome = "";
-    // Splash screen
-    if (hasSplash){
-        welcome = splash + "\n";
-    }
-    welcome += "My Name is " + setName(name) + ", welcome to my portfolio.\n";
-  
-    welcome += "Type ";
-    welcome += setCommand("help");
-    welcome +=" for commands";
+    welcome = ` ${splash} 
+     My Name is ${setName(name)} welcome to my portfolio.\n
+     Type ${setCommand("help")} for commands`;
     return welcome;
 };
 
@@ -303,9 +297,6 @@ CMDResume.setArrayCommand = function(command, information, data){
 CMDResume.initVariables = function(){
     // Help
     this.commandMap["help"] = "lists help for all the commands";
-
-    // Man pages
-    this.commandMap.man = "describes what each command does";
     
     // Clear screen
     this.commandMap.clear = "clear command history from screen";
