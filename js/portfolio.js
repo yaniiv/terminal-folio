@@ -271,8 +271,7 @@ CMDResume.init = function(tag){
 };
 
 CMDResume.getSplash = function(){
-    var welcome = "";
-    welcome = ` ${splash} 
+    var welcome = ` ${splash} 
      My Name is ${setName(name)} welcome to my portfolio.\n
      Type ${setCommand("help")} for commands`;
     return welcome;
@@ -316,7 +315,7 @@ CMDResume.initVariables = function(){
 
     // PDF
     // this.setCommand("pdf", "pdf version of the résumé", this.pdf, pdfLink);
-
+    
     // Education
     this.setArrayCommand("education", "education history", education);
 
@@ -332,6 +331,9 @@ CMDResume.initVariables = function(){
     // Skills
     this.initSkills();
 
+    this.setArrayCommand("projects", "some projects I've worked on", projects);
+
+    
     // Social Media
     if (this.hasSocialMedia()){
         this.commandMap.socialmedia = "Social Media profiles";
@@ -343,24 +345,6 @@ CMDResume.initVariables = function(){
 CMDResume.initSkills = function(){
     if (this.hasSkillTable()){
         var skillSubCategories = "";
-        // Skills - languages
-        if (isNotEmptyArray(skillsLanguages)){
-            this.commandFunctionMap["skills -l"] = getAll("languages", skillsLanguages);
-            this.commandFunctionMap["skills -languages"] = this.commandFunctionMap["skills -l"];
-            skillSubCategories += "[-languages|l]";
-        }
-        // Skills -technologies
-        if (isNotEmptyArray(skillsTools)){
-            this.commandFunctionMap["skills -t"] = getAll("tools", skillsTools);
-            this.commandFunctionMap["skills -tools"] = this.commandFunctionMap["skills -t"];
-            skillSubCategories += "[-tools|t]";
-        }
-        // Skills - concepts
-        if (isNotEmptyArray(skillsConcepts)){
-            this.commandFunctionMap["skills -c"] = getAll("concepts", skillsConcepts);
-            this.commandFunctionMap["skills -concepts"] = this.commandFunctionMap["skills -c"];
-            skillSubCategories += "[-concepts|c]";
-        }
         // Skills in total
         this.commandMap["skills"] = "skills obtained. " + skillSubCategories;
         this.commandFunctionMap["skills"] = this.getSkillTable();

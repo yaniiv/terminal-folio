@@ -32,6 +32,8 @@ var splash = ""
 + "  |                                    |           oo\n"
 + "  |____________________________________|\n";
 
+var hasSplash = true;
+
 // Details
 var name = "Yaniv Goldobin";
 var loc = "Los Angeles";
@@ -66,8 +68,11 @@ var employment = [
 	["Apperture Watch", "Software Engineer", "June 2016 - Present"],
 	["Clicktime", "QA Engineering Intern", "June 2012 - September 2012"]
 ];
-// // Volunteering list
-// var volunteering = [["Volunteer", "Voluntation", "November 2013 - Present"]];	
+// Volunteering list
+var projects = [
+	["Volunteer", "Voluntation", "November 2013 - Present"]
+
+];	
 
 // // Awards list
 // var awards = [["Mad Coder", "Programmer Institute", "December 2013"]];
