@@ -161,8 +161,8 @@ CMDResume.hasSocialMedia = function(){
 CMDResume.getSkillTable = function(){
     var result = setTitle("Skills:\n");
     result += "           |\tStrong\t|\tExperienced\n";
-    result += "Languages  |\t" + getSkills(skillsLanguages).join("\t|\t") + "\n";
-    result += "Tools      |\t" + getSkills(skillsTools).join("\t|\t") + "\n";
+    result += getSkills(skillsLanguages).join("\t|\t") + "\n";
+    result += getSkills(skillsTools).join("\t|\t") + "\n";
     result += "Concepts   |\t" + getSkills(skillsConcepts).join("\t|\t");
 
     return result;
