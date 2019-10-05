@@ -284,7 +284,7 @@ CMDResume.init = function(tag) {
 
 CMDResume.getSplash = function() {
   var welcome = ` ${splash}
-My aName is ${setName(name)} welcome to my portfolio.\n
+My Name is ${setName(name)} welcome to my portfolio.\n
 Type ${setCommand("help")} for commands`;
   return welcome;
 };
