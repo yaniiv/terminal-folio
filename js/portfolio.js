@@ -153,8 +153,23 @@ CMDResume.getSocialMedia = function() {
   return result;
 };
 
+CMDResume.getProjects = function() {
+  var result = setTitle("Projects:");
+  projects.map(function(item) {
+    if (isNotEmpty(item[1])) {
+      result += "\n";
+      result += item[0] + " - " + item[1];
+    }
+  });
+  return result;
+};
+
 CMDResume.hasSocialMedia = function() {
   return isNotEmptyArray(socialMedia);
+};
+
+CMDResume.hasProjects = function() {
+  return isNotEmptyArray(projects);
 };
 
 // Return a list of skills in a table
@@ -363,6 +378,11 @@ CMDResume.initVariables = function() {
   if (this.hasSocialMedia()) {
     this.commandMap.socialmedia = "Social Media profiles";
     this.commandFunctionMap.socialmedia = this.getSocialMedia();
+  }
+
+  if (this.hasProjects()) {
+    this.commandMap.socialmedia = "Side Projects";
+    this.commandFunctionMap.socialmedia = this.getProjects();
   }
 };
 

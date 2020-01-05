@@ -37,8 +37,8 @@ var hasSplash = true;
 
 // Details
 var name = "Yaniv Goldobin";
-var loc = "Los Angeles";
-var lookingfor = "Fullstack || Frontend Javascript Engineer";
+var loc = "San Francisco";
+var lookingfor = "Fullstack || Frontend Software Engineer";
 // var pdfLink = "http://en.wikipedia.org/wiki/R%C3%A9sum%C3%A9";
 
 // Settings
@@ -49,17 +49,27 @@ var githubUsername = "yantonsoup";
 var linkedinUsername = "ygoldobin";
 var githubURL = "https://github.com/yantonsoup";
 var linkedinURL = "https://www.linkedin.com/in/ygoldobin";
+
+var yanivOnline = "https://www.linkedin.com/in/ygoldobin";
+var afterTheUssr = "https://aftertheussr.com/";
+var sperry = "https://sperry.work/";
+var dispersion = "https://github.com/dispersionjs/dispersion";
 // If left blank e.g. url = "" then it won't appear
-var websiteURL = "";
+var websiteURL = "http://www.yanivgoldobin.com";
 var blogURL = "https://medium.com/@yaniv_g";
 var portfolioURL = "http://www.yanivgoldobin.com";
-var twitterURL = "https://twitter.com/yantonsoup";
 var socialMedia = [
   ["Linkedin", linkedinURL],
   ["Github", githubURL],
   ["Website", websiteURL],
-  ["Blog", blogURL],
-  ["Twitter", twitterURL]
+  ["Blog", blogURL]
+];
+
+var projects = [
+  ["After The Ussr", afterTheUssr],
+  ["Yaniv Online", yanivOnline],
+  ["Scott Perry's Portfolio", sperry],
+  ["Dispersion", dispersion]
 ];
 
 // Education list
