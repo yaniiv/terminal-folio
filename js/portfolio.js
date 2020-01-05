@@ -266,6 +266,22 @@ CMDResume.commandLineParse = function(input) {
     }
   } else if (this.commandFunctionMap.hasCommand(rootCommand)) {
     return this.runCommand(rootCommand, stemCommand == "-top");
+    // happy fun times
+  } else if (rootCommand.is("ls")) {
+    return "A file system in a galaxy far, far away...";
+  } else if (rootCommand.is("cd")) {
+    return "Let's just hang in this directory for now...";
+  } else if (rootCommand.is("git")) {
+    if (stemCommand === "commit") {
+      return "Teehee, no accepting commits to this portfolio...but feel free to fork it to make your own! https://github.com/yantonsoup/terminal-folio";
+    } else if (stemCommand === "checkout") {
+      return "We only push straight to master around these parts!";
+    } else if (stemCommand === "add") {
+      return "Whew that's some great looking code you just added!";
+    } else {
+      return "If only there was a command...";
+    }
+    //
   } else {
     if (rootCommand.length > 0) {
       return "`" + rootCommand + "` is an unknown command.";
@@ -381,8 +397,8 @@ CMDResume.initVariables = function() {
   }
 
   if (this.hasProjects()) {
-    this.commandMap.socialmedia = "Side Projects";
-    this.commandFunctionMap.socialmedia = this.getProjects();
+    this.commandMap.projects = "Side Projects";
+    this.commandFunctionMap.projects = this.getProjects();
   }
 };
 
