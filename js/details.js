@@ -74,20 +74,29 @@ var education = [
 
 // Employment list
 var employment = [
-  ["Apperture Watch", "Software Engineer", "June 2016 - Present"],
+  ["Vrai", "Javascript Engineer", "July 2018 - September 2019"],
+  ["The Black Tux", "Software Engineer", "January 2017 - July 2018"],
+  ["Apperture Watch", "Software Engineer", "June 2016 - January 2017"],
   ["Clicktime", "QA Engineering Intern", "June 2012 - September 2012"]
 ];
 
 // Skills list
-var skillsLanguages = [["Strong", "Javascript"], ["Experienced", "HTML5 CSS3"]];
+var skillsLanguages = [
+  ["Strong", "Javascript"],
+  ["Experienced", "HTML5 CSS3"]
+];
 
 var skillsStrong = [
   "Javascript",
-  "HTML5",
-  "CSS3",
+  "HTML",
+  "SCSS",
   "React",
+  "Redux",
   "Node",
+  "GraphQL",
+  "Next.js",
   "Express",
+  "Rest",
   "Git",
   "jQuery",
   "ES6",
@@ -98,7 +107,10 @@ var skillsExperienced = [
   "Redux",
   "Electron",
   "Webpack",
+  "AWS",
   "Mongo",
+  "d3.js",
+  "Three.js",
   "PostgreSQL",
   "Mongo",
   "Websockets",
